@@ -1,13 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+    font-size: 2vw;
+}
 #logo{
 position: absolute;
 width: 481px;
 height: 427px;
 left: 3%;
 top: -6%;
+     background-color: #fffcfc;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } 
 #headerbackground{
     position: relative;
     z-index: -1;
+    visibility:hidden;
 }
 
 #footerbackground{
@@ -15,6 +64,7 @@ top: -6%;
     bottom: 0px;
     transform: rotate(180deg);
     z-index: -1;
+    visibility: hidden;
 } 
 .mainnav{
     list-style-type:none;
@@ -84,12 +134,12 @@ top: -6%;
 
 
 h1{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Open Sans', sans-serif;
     text-align: center; 
-    font-size: 8vw;
+    font-size: 6vw;
 }
 h2{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3vw;
 }
 #aboutsection{
@@ -137,6 +187,84 @@ img{
     justify-content: center;
     
 }
+.dropbtn {
+   background: #FFEEF8;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+  color: black;
+  padding: 16px;
+  font-size: 1.5vw;
+  
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -100px;
+  background-color: #f1f1f1;
+  width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+
+.dropdown a:hover {background-color: #ddd;}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  left: -100px;
+  background-color: #f1f1f1;
+  width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  left: -100px;
+  background-color: #f1f1f1;
+  width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+
+.dropdown3 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
 #pricelistitem1{
     background-color: lightgray;
     width: 30%;
@@ -148,6 +276,8 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #pricelistitem2{
     background-color: lightgray;
@@ -159,6 +289,8 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #pricelistitem3{
     background-color: lightgray;
@@ -170,6 +302,31 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#contactsection h2{
+    text-align: center;
+}
+
+#contactcontainer1{
+    margin-left: 60px;
+    float: left;
+    padding: 10px;
+}
+contactcontainer2{
+    margin: auto;
+    float: right;
+    padding: 10px;
+    
+    
+}
+iframe{
+    padding: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 150px;
 }
 
 #myBtn {

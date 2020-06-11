@@ -6,6 +6,7 @@
    <link rel="stylesheet" type="text/css" href="style.css"> 
     <script src="https://kit.fontawesome.com/b0c86662cc.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
@@ -26,15 +27,21 @@
     </header>
     <nav id="navbar">
         <ul class="mainnav">
-            <li class="mainnavbutton"><button class="mainnavbuttonspecify" onclick="document.location = 'about.html' "><i class="far fa-address-card" id="about"></i>O mnie</button></li>
-            <li class="mainnavbutton"><button class="mainnavbuttonspecify" onclick="document.location = 'works.html' "><i class="fas fa-paint-brush" id="works"></i>Portfolio</button></li>
-            <li class="mainnavbutton"><button class="mainnavbuttonspecify" onclick="document.location = 'pricelist.html' "><i class="fas fa-hand-holding-usd" id="pricelist"></i>Cennik</button></li>
-            <li class="mainnavbutton"><button class="mainnavbuttonspecify" onclick="document.location = 'contact.html' "><i class="fas fa-mobile-alt" id="contact"></i>Kontakt</button></li>
+            <li class="mainnavbutton"><button class="mainnavbuttonspecify"><i class="far fa-address-card" id="about"></i><a href="#aboutsection">O mnie</a></button></li>
+            <li class="mainnavbutton"><button class="mainnavbuttonspecify"><i class="fas fa-paint-brush" id="works"></i><a href="#workssection">Portfolio</a></button></li>
+            <li class="mainnavbutton"><button class="mainnavbuttonspecify"><i class="fas fa-hand-holding-usd" id="pricelist"></i><a href="#pricelistsection">Cennik</a></button></li>
+            <li class="mainnavbutton"><button class="mainnavbuttonspecify"><i class="fas fa-mobile-alt" id="contact"></i><a href="#contactsection">Kontakt</a></button></li>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
         </ul>
     </nav>
+    
+    <div class="icon-bar">
+  <a href="https://www.facebook.com/glowupszczecin/" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/glowup_szczecin/?hl=pl" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+   
     <section id="slogan">
         <h1>Zafunduj sobie odrobinę blasku!</h1>
         
@@ -76,13 +83,68 @@ Proin sed magna laoreet, elementum lectus porttitor, semper eros. Nam quis conse
           <div id="pricelistmain">
           <div id="pricelistitem1">
               <h2>Usługa z dojazdem</h2>
-              
-          </div>
+              <div class="dropdown">
+  <button onclick="dropdownFunction1()" class="dropbtn"><i class="fas fa-arrow-down"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+   <p> Szczecin Centrum: --- zł</p>
+    <br>
+    <p> Szczecin Prawobrzeże: --- zł</p>
+    <br>
+    <p> Szczecin inne dzielnice: --- zł</p>
+    <br>
+    <h3> Co dostajesz w tej cenie?</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas condimentum mi molestie erat ultricies commodo.</li>
+        <li>Cras bibendum orci vitae cursus porttitor.</li>
+    </ul>
+  </div>
+</div>
+</div>
           <div id="pricelistitem2">
               <h2>Usługa bez dojazdu</h2>
+               <div class="dropdown">
+  <button onclick="dropdownFunction2()" class="dropbtn"><i class="fas fa-arrow-down"></i></button>
+  <div id="myDropdown2" class="dropdown-content2">
+   <p> Usługa w moim salonie: --- zł</p>
+    <br>
+    <h3> Co dostajesz w tej cenie?</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas condimentum mi molestie erat ultricies commodo.</li>
+        <li>Cras bibendum orci vitae cursus porttitor.</li>
+    </ul>
+  </div>
+</div>
           </div>
           <div id="pricelistitem3">
               <h2>Makijaż ślubny</h2>
+               <div class="dropdown">
+  <button onclick="dropdownFunction3()" class="dropbtn"><i class="fas fa-arrow-down"></i></button>
+  <div id="myDropdown3" class="dropdown-content3">
+   <h3>Pakiet 1: --- zł</h3>
+    <br>
+    <h3> Co dostajesz w tej cenie?</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas condimentum mi molestie erat ultricies commodo.</li>
+        <li>Cras bibendum orci vitae cursus porttitor.</li>
+    </ul>
+    <br>
+    <h3>Pakiet 2: --- zł</h3>
+    <br>
+    <h3> Co dostajesz w tej cenie?</h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas condimentum mi molestie erat ultricies commodo.</li>
+        <li>Cras bibendum orci vitae cursus porttitor.</li>
+    </ul>
+  </div>
+</div>
           </div>
           </div>
       </section>
@@ -90,6 +152,14 @@ Proin sed magna laoreet, elementum lectus porttitor, semper eros. Nam quis conse
       
       <section id="contactsection">
           <h1>Umów się na wizytę !</h1>
+          <div id="contactcontainer1">
+          <h2><i class="fas fa-mobile-alt"></i> : 123-123-123</h2>
+          <h2><i class="far fa-envelope"></i> : example@gmail.com</h2>
+          </div>
+          <div id="contactcontainer2">
+          <h2>Jestem tutaj :</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.5693241797967!2d14.663829315282484!3d53.36886218072635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700a7cc4c878f3b%3A0x894052ee35c7cec1!2sGwarna%2018%2C%2071-899%20Szczecin!5e0!3m2!1spl!2spl!4v1591883001706!5m2!1spl!2spl" width="600" height="450" ></iframe>
+          </div>
       </section>
       <br>
 
