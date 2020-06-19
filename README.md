@@ -3,4 +3,7 @@ Project in Figma: https://www.figma.com/file/ActuRkt5Jf9j5dKhIBgeRW/Strona-GlowU
 Project on GitHub Pages: https://smartboypl99.github.io/
 
 About my page:
-This page was created to learn how to make website. In future this page will be published on commercial server.
+  - This page was created to learn how to make website. 
+  - In future this page will be published on commercial server.
+  - Page isn't responsive yet.
+
